@@ -4,7 +4,7 @@
 }
 
 *{
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: poppins-medium;
     margin: 0px;
     padding: 0px;
@@ -24,7 +24,7 @@ align-items: center;
     width: 100%;
     border-radius: 11px;
     margin: 0 auto;
-    border:4px solid black;
+    border: 4px solid black;
     box-shadow:3px 3px 1px black;
 }
 .todo-div h2{
@@ -62,7 +62,9 @@ align-items: center;
     cursor: pointer;
     font-size: 17px;
 }
-li{
+
+.div{
+    width: 417px;
     background-color: rgb(167, 167, 167);
     margin: 10px;
     border-radius: 10px;
@@ -70,6 +72,10 @@ li{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.p{
+    width: 93%;
+    overflow-wrap: break-word;
 }
 .delBtn{
     text-align: right; 
@@ -80,7 +86,6 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: right;
 }
 .delBtn:hover{
     background-color: rgb(208, 206, 206);
