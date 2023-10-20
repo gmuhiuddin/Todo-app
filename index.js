@@ -37,7 +37,6 @@ function addTodoByLs (value){
                 
                 let removeDiv = div.childNodes[0].innerText
                 let removeDivIndex = userTodos.indexOf(removeDiv)
-                // console.log(removeDivIndex)
                 userTodos.splice(removeDivIndex,1)
                 localStorage.setItem("user todo",JSON.stringify(userTodos))
                 div.remove()
