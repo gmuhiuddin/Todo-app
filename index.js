@@ -1,7 +1,8 @@
-let userTodo = document.getElementById("todo-input")
+let userTodo = document.getElementById("todo-input");
 let AddIndoBtn = document.getElementById("add-btn");
 let listDiv = document.getElementById("list-div");
 AddIndoBtn.addEventListener("click" ,addTodoByUser)
+
 
 var userTodos =  JSON.parse(localStorage.getItem('user todo')) || []
 
@@ -10,10 +11,14 @@ userTodos.forEach((value,index) => {
     })
 
     function addTodoByUser (){
+        if(userTodo.value === ""){
+            alert("Please enter something in input box")
+        }else{
         userTodos.push(userTodo.value)
     localStorage.setItem('user todo',JSON.stringify(userTodos))
     
     addTodoByLs()
+        }
     }
 
 function addTodoByLs (value){
@@ -48,5 +53,4 @@ function addTodoByLs (value){
     
         userTodo.value = "";
 }
-
 
