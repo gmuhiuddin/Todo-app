@@ -3,7 +3,6 @@ let AddIndoBtn = document.getElementById("add-btn");
 let listDiv = document.getElementById("list-div");
 AddIndoBtn.addEventListener("click" ,addTodoByUser)
 
-
 var userTodos =  JSON.parse(localStorage.getItem('user todo')) || []
 
 userTodos.forEach((value,index) => {
@@ -23,7 +22,6 @@ userTodos.forEach((value,index) => {
 
 function addTodoByLs (value){
     
-        
             let div = document.createElement('div');
             div.className = 'div'
 
@@ -49,8 +47,6 @@ function addTodoByLs (value){
 
         listDiv.appendChild(div)
 
-        
-    
         userTodo.value = "";
 }
 

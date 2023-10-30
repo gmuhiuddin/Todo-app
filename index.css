@@ -4,11 +4,11 @@
 }
 
 *{
-    /* overflow: hidden; */
     font-family: poppins-medium;
     margin: 0px;
     padding: 0px;
 }
+
 .container{
 min-height: 100vh;
 width: 100%;
@@ -17,6 +17,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+
 .todo-div{
     background-color: white;
     padding: 32px 25px 67px;
@@ -27,21 +28,25 @@ align-items: center;
     border: 4px solid black;
     box-shadow:3px 3px 1px black;
 }
+
 .todo-div h2{
     color: #002765;
     display: flex;
     align-items: center;
 }
+
 .note-book-img{
     height: 39px;
     width: 39px;
     margin-left: 10px;
 }
+
 .rows{
     width: 99%;
     margin-top: 15px;
     
 }
+
 .rows input {
      border-radius: 30px;
      height: 49px;
@@ -51,6 +56,7 @@ align-items: center;
      border: none;
      background-color: rgb(211, 210, 210);
 }
+
 .rows button {
     border-radius: 30px;
     height: 49px;
@@ -73,10 +79,12 @@ align-items: center;
     align-items: center;
     justify-content: space-between;
 }
+
 .p{
     width: 93%;
     overflow-wrap: break-word;
 }
+
 .delBtn{
     text-align: right; 
     font-size: 25px;
@@ -87,6 +95,7 @@ align-items: center;
     align-items: center;
     justify-content: center;
 }
+
 .delBtn:hover{
     background-color: rgb(208, 206, 206);
 }
