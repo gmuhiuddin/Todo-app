@@ -49,4 +49,3 @@ function addTodoByLs(value) {
 
     userTodo.value = "";
 }
-
